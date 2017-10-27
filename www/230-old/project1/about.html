@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metatag declarations -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Project 1 About Page" />
+    
+    <!-- Title -->
+    <title>About this Project</title>    
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="media/icon.png" />
+        
+    <!-- CSS Stylesheet references -->
+        <!-- Print Only Stylesheet -->
+        <!-- Web Only Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/default-styles.css" />
+    
+</head>
+
+<!-- BODY Content -->
+<body>
+    
+    <!-- Website outer shell -->
+    <div id="website">
+        
+        <!-- Header shell -->
+        <header>
+
+            <!-- Navbar Trigger -->
+            <a href="javascript:void(0)" class="openbtn desktop-only" onclick="openPushNav()">Open Navigation</a>
+            
+            <!-- Website Title. -->
+            <div id="page-title" class="text-center bold">
+                <div id="brand">
+                    <img id="brand-img" src="media/icon.png" alt="Guitar Icon" title="Guitar Icon" class="desktop-only" />
+                </div>
+                <h1 class="bold">play that thang.</h1>
+                <small class="italic">What's this all about!?</small>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar alabastar text-center">
+                <span id="top" class="sr-only">To Navigation.</span> 
+                
+                <!-- Navbar (Desktop) Content -->                  
+                <div id="desktop-nav" data-start="450" class="sidenav desktop-only">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePushNav()">&times;</a>
+                    <ul class="navigation">
+                        <li class="nav-link"><a href="index.html">HOME</a></li>
+                        <li class="nav-link"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link current-link"><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div id="mobile-nav" class="mobile-only">
+                    <ul class="navigation btnshadow">
+                        <li class="nav-link main-dark"><a href="index.html">HOME</a></li>
+                        <li class="nav-link main-dark"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link main-dark"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link main-dark"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link main-dark current-link"><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!-- Main Content -->
+        <section id="main">
+            
+            <!-- Aside Navigation Bar -->
+            <aside id="nav-aside" class="desktop-only">
+                <small class="text-center italics">Table of Contents</small>
+                <ul class="navigation btnshadow" onclick="closePushNav()">
+                    <li><a href="#project-info">project</a></li>
+                    <li class="indent"><a href="#resources">resources</a></li>
+                    <li><a href="#class-info">class</a></li>
+                    <li><a href="#developer-info">developer</a></li>
+                </ul>                
+            </aside>
+            
+            <!-- Main Content -->
+            <div id="main-content" class="main-light">                
+                <div id="project-info" class="main-set main-dark">                    
+                    <h2 class="main-title">About this Project</h2>
+                                              
+                    <div class="sub-content c-8">                        
+                        <div class="figure-example index">
+                            <div class="index-box">
+                                <h3>Why this topic?</h3>                        
+                                <div class="sub-text">                        
+                                    <p>I chose this topic to help others learn how to play the guitar. One of the students housing in my dormitory this year is an avid player. He enjoys teaching others about music theory as well as showing others how to play the instruments he enjoys. He wants to start a special interest house on floor for music; he gave me the idea to do the tutorial on playing the guitar.</p>
+                                </div>  
+                            </div>
+                            
+                            <div class="index-box">
+                                <h3>How did you go above and beyond?</h3>                        
+                                <div class="sub-text">                        
+                                    <p>I spent a lot of time tackling this from a mobile-first design; I listed my goals out and had responsiveness be the personal challenge I would tackle. Making use of CSS3 animations and JavaScript to fully utilize the website, I was able to create a sleek, appealing interface.</p>
+                                </div>
+                            </div>    
+
+                            <div class="index-box">
+                                <h3>Anything special?</h3>                        
+                                <div class="sub-text">                        
+                                    <p>By using JavaScript, I was able to make a sticky sidebar navigation that affixes to the screen after scrolling past a certain point. I utilized the data- attributes supplied by HTML5 for use with the JavaScript scripts. I used a script to offset the content when the off-canvas navigation is used. The sidebar and off-canvas navigations show up on the desktop/large screen versions of the website.</p>
+                                </div>
+                            </div> 
+
+                            <div class="index-box">
+                                <h3>How could you improve this site?</h3>                        
+                                <div class="sub-text">                        
+                                    <p>If I had the time, I would rework the way I did the CSS styling. I take an approach of experimenting and then refining, which can leave me with a good excess amount of classes that may not be used in the final product. I would like to be able to return and clean this up.</p>
+                                    <p>In addition to reworking the styling, I was also experimenting with javascript to trigger a change in the aside navigation panel where the "current" link would switch depending on how far down the page the user has scrolled. Unfortunately, my implementations were clunky, using data-set attributes that only worked for one screen size. Accounting for multiple sizes would have taken a bit more time, so, I removed the feature to prevent any confusion.</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>                   
+                    
+                    <div class="sub-content c-8">
+                        <div id="resources" class="figure-example index">
+                        <h3>Resources used:</h3>                        
+                            <div class="sub-text">        
+                                <p>
+                                    Website Logo <cite><br class="mobile-only" /><a href="http://www.flaticon.com/authors/iconnice">created by Iconnice from Flaticon.com</a></cite>
+                                </p>                       
+
+                                <p>
+                                    Seigaiha (Background Pattern) <cite><br class="mobile-only" /><a href="http://subtlepatterns.com/seigaiha/">created by</a> <a href="http://olgalibby.com/">Olga Libby</a> <a href="http://subtlepatterns.com/seigaiha/">with SubtlePatterns.com</a></cite>
+                                </p>
+
+                                <p>
+                                    Guitar Silhouettes <cite><br class="mobile-only" /><a href="http://www.freepik.com/free-vector/guitar-line-art-illustration_725005.htm">created by Freepik from Freepik.com</a></cite>
+                                </p>
+
+                                <p>
+                                    Leo Holman <cite><br class="mobile-only" /><a href="http://lah2719.wordpress.com/">the blog of the avid guitar player from on floor</a></cite>
+                                </p>
+
+                                <p>
+                                    Guitar Tablature screenshot <cite><br class="mobile-only" /><a href="https://www.guitaretab.com/">from GuitareTab.com</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Plectrum Image <cite><br class="mobile-only" /><a href="http://www.musicradar.com/news/guitars/playing-acoustic-guitar-plectrum-technique-567144">from MusicRadar.com</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Microphone Image <cite><br class="mobile-only" /><a href="https://unsplash.com/search/microphone?photo=LETdkk7wHQk">taken by Kane Reinholdtsen from Perth, Australia</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Drumset Image <cite><br class="mobile-only" /><a href="https://unsplash.com/photos/-lWcaUVJ39Y">taken by Gabriel Barletta</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Metronome Image <cite><br class="mobile-only" /><a href="https://upload.wikimedia.org/wikipedia/commons/6/69/Wittner_metronome.jpg">from Wikimedia Commons</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Chords Image <cite><br class="mobile-only" /><a href="https://unsplash.com/photos/Hz3Kjzgyv_Q">taken by Austin Prock from La Miranda, United States</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Recording Workstation Image <cite><br class="mobile-only" /><a href="https://unsplash.com/search/visualize?photo=EpJOBZNzrVo">taken by João Silas from Brazil</a></cite>
+                                </p>
+                                
+                                <p>
+                                    iTunes Logo <cite><br class="mobile-only" /><a href="http://www.apple.com/">from Apple</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Soundboard Image <cite><br class="mobile-only" /><a href="https://unsplash.com/search/audio?photo=73o_FzZ5x-w">taken by Alex Ruban from Moskva, Russia</a></cite>
+                                </p>
+                                
+                                <p>
+                                    Sheet Music Image <cite><br class="mobile-only" /><a href="https://unsplash.com/search/sheet-music?photo=jl2LgYyDCNo">taken by Louis Smith from Cape Town, South Africa</a></cite>
+                                </p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                                
+                <div id="class-info" class="main-set main-dark">  
+                    <h2 class="main-title">About the Class</h2>
+                    <div class="sub-content c-8"> 
+                        <div class="figure-example index">
+                            <h6><abbr title="School of Interactive Games and Media">IGME</abbr> 230<br/>Web Design &amp; Implementation</h6>                        
+                            <div class="sub-text">                        
+                                <p>
+                                    In the <a class="bold" href="https://www.rit.edu/gccis/igm/">School of Interactive Games and Media</a>, <a class="bold" href="https://people.rit.edu/spbics/230-01.shtml">IGME 230</a> is all about creating websites and crafting designs that follow established principles that we know. From CRAP to ERDU, tackling design is part of the assignments we face.
+                                </p>
+
+                                <p>
+                                    This course provides an introduction to web development tools and technologies, such as HTML, CSS, JavaScript and DHTML, AJAX, web platforms and environments, and server-side programming methods. Programming projects are required.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div id="developer-info" class="main-set main-dark">                    
+                    <h2 class="main-title">About the Developer</h2>
+                                              
+                    <div class="sub-content c-8">
+                        <div class="figure-example index">
+                            <h6>Ian Effendi</h6>   
+                            <div class="sub-text">                        
+                                <p>
+                                    Ian is a web-developer and graphic designer hailing from New York City.<br />
+                                    Currently, he is studying at the Rochester Institute of Technology hoping
+                                    to graduate with a Bachelor of Science in Game Design and Development.
+                                </p>
+
+                                <p class="text-center">
+                                    Please feel free to visit his personal <a class="bold" href="https://people.rit.edu/iae2784">website</a>.
+                                </p>
+
+                                <p class="text-center"><a class="btn-redirect" href="index.html">Return to Home.</a><span class="desktop-only display-inline"> | </span><a class="btn-redirect" href="https://people.rit.edu/iae2784/ianeffendi/html/contact.html" >Let's Talk!</a></p>
+                            </div>  
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <!-- Pre-Footer Content -->
+            <section id="pre-footer" class="align-center text-center">
+                <small class="text-center italic">Find me on these platforms.</small>
+                <ul class="social">
+                    <li><a class="social-icon" href="https://github.com/rimij405"><img alt="Github"  src="media/octocat.png"/></a></li>
+                    <li><a class="social-icon" href="https://linkedin.com/in/effendiian"><img alt="LinkedIn" src="media/linkedin_big.png"/></a></li>
+                    <li><a class="social-icon" href="https://www.instagram.com/thelionsredmane/"><img alt="Instagram" src="media/instagram.png"/></a></li>
+                </ul>
+            </section>
+            
+            <!-- Divisor -->
+            <hr/>
+
+            <!-- Main Footer Content -->
+            <section id="footer-content" class="align-center text-center">
+                <p id="copyright" class="italic">&copy; 2016 - Ian Effendi (Project 1: Web Design and Implementation)</p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=people.rit.edu/iae2784/230/project1/about.html">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                </p>
+            </section>
+
+        </footer>
+        
+    </div>
+    
+    
+        <!-- JavaScript file references -->
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/sticky.js"></script>
+        <!-- <script type="text/javascript" src="js/marker.js"></script>
+    
+        <script type="text/javascript" >
+        
+        window.addEventListener("scroll", function(event) {
+           markerScroll("project-info-link", "current")
+        });
+            
+        window.addEventListener("scroll", function(event) {
+           markerScroll("class-info-link", "current")
+        }); 
+            
+        window.addEventListener("scroll", function(event) {
+           markerScroll("developer-info-link", "current")
+        });
+            
+        </script> -->
+    
+</body>    
+</html>

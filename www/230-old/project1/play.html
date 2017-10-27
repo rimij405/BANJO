@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metatag declarations -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Project 1 for Web Design and Implementation" />
+    
+    <!-- Title -->
+    <title>Play That Thang!</title>    
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="media/icon.png" />
+        
+    <!-- CSS Stylesheet references -->
+        <!-- Print Only Stylesheet -->
+        <!-- Web Only Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/default-styles.css" />
+    
+</head>
+
+<!-- BODY Content -->
+<body>
+    
+    <!-- Website outer shell -->
+    <div id="website">
+        
+        <!-- Header shell -->
+        <header>
+
+            <!-- Navbar Trigger -->
+            <a href="javascript:void(0)" class="openbtn desktop-only" onclick="openPushNav()">Open Navigation</a>
+            
+            <!-- Website Title. -->
+            <div id="page-title" class="text-center bold">
+                <div id="brand">
+                    <img id="brand-img" src="media/icon.png" alt="Guitar Icon" title="Guitar Icon" class="desktop-only" />
+                </div>
+                <h1 class="bold">play that thang.</h1>
+                <small class="italic">Learning how to play the guitar!</small>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar alabastar text-center">
+                <span id="top" class="sr-only">To Navigation.</span> 
+                
+                <!-- Navbar (Desktop) Content -->                  
+                <div id="desktop-nav" class="sidenav desktop-only">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePushNav()">&times;</a>
+                    <ul class="navigation">
+                        <li class="nav-link"><a href="index.html">HOME</a></li>
+                        <li class="nav-link"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link current-link"><a href="#">PLAY</a></li>
+                        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div id="mobile-nav" class="mobile-only">
+                    <ul class="navigation btnshadow">
+                        <li class="nav-link main-dark"><a href="index.html">HOME</a></li>
+                        <li class="nav-link main-dark"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link main-dark"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link main-dark current-link"><a href="#">PLAY</a></li>
+                        <li class="nav-link main-dark"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!-- Main Content -->
+        <section id="main">
+            
+            <!-- Aside Navigation Bar -->
+            <aside id="nav-aside" class="desktop-only">
+                <small class="text-center italics">Table of Contents</small>
+                <ul class="navigation btnshadow" onclick="closePushNav()">
+                    <li><a href="#play-info">mastery</a></li>
+                    <li class="indent"><a href="#rhythm">stay on beat</a></li>
+                    <li class="indent"><a href="#songs">memorize</a></li>
+                    <li class="indent"><a href="#record">record yourself</a></li>
+                    <li class="indent"><a href="#performance">go solo</a></li>
+                    <li class="indent"><a href="#others">group up</a></li>
+                    <li><a href="#next-info">about</a></li>
+                </ul>                
+            </aside>
+            
+            <!-- Main Content -->
+            <div id="main-content" class="main-light">
+                
+                <div id="play-info" class="main-set main-dark">                    
+                    <h2 class="main-title">Mastering the Guitar</h2>
+                                              
+                    <div class="sub-content c-8">
+                        <h3>Practice (and performance) makes perfect!</h3>                        
+                        <div class="sub-text">                        
+                            <p>If you've got the guitarist's toolset underneath your belt, you just need to practice and perform in order to ensure you've mastered the guitar.</p>
+                        </div>
+                    </div>
+                
+                    <div class="sub-content c-8">
+                        <h3 class="text-center">How can we improve our skills!</h3>                        
+                        <div class="sub-text">
+                                                        
+                            <div  id="rhythm" class="figure-example left">
+                                
+                                <h6 class="text-center">1. Follow the beat</h6>
+                                <small class="italic text-center">(and master your rhythm).</small>
+                                
+                                <figure>
+                                    <img alt="Picture of a soundboard." title="When you visualize audio, you can actually see the rhythm!" src="media/soundboard.jpg" />
+                                </figure>
+                                                                         
+                                <p>
+                                    <span class="bold">Rhythm</span> refers to a strong, regular, repeated pattern of movement or sound; in music this refers to the systematic arrangement of sounds. As you develop an ear for music, finding the rhythm inside of a song's melody will pay great dividends toward your mastery of the guitar.
+                                </p>                               
+                            </div>                            
+                                                        
+                            <div  id="songs" class="figure-example right">
+                                
+                                <h6 class="text-center">2. Memorize songs</h6>
+                                <small class="italic text-center">(and play till your heart sings).</small>
+                                
+                                <figure>
+                                    <img alt="The iTunes logo." title="Songs are just complex compositions of musical notes." src="media/itunes.png" />
+                                </figure>
+                                        
+                                <p>
+                                    By <span class="bold">memorizing</span> the melodies for your favorite songs, you'll get better at playing without sheet music and tablature in front of you. The rhythm of a song can often act as a marker in a song to help you keep your place.
+                                </p>     
+                                
+                                <p>
+                                    Keep up your skills by learning your favorite songs or finding sheet music for simple songs. Some suggestions include: 
+                                    "<a class="italic" href="https://www.youtube.com/watch?v=OFGgbT_VasI">Redemption Song</a>," by <a class="bold" href="https://en.wikipedia.org/wiki/Bob_Marley">Bob Marley</a>, 
+                                    "<a class="italic" href="https://www.youtube.com/watch?v=aHZ3aT9ms7w">Love Me Do</a>," by <a class="bold" href="https://en.wikipedia.org/wiki/The_Beatles">The Beatles</a>, and 
+                                    "<a class="italic" href="https://www.youtube.com/watch?v=pB-5XG-DbAA">Stay With Me</a>," by <a class="bold" href="https://en.wikipedia.org/wiki/Sam_Smith_(singer)">Sam Smith</a>
+                                </p>
+                            </div>
+                            
+                            <div id="record" class="figure-example left">
+                                
+                                <h6 class="text-center">3. Record yourself</h6>
+                                <small class="italic text-center">(and watch it all over again).</small>
+                                
+                                <figure>
+                                    <img alt="Workstation with an application open to a photo editor." title="Feel free to use a phone camera instead." src="media/record.jpg" />
+                                </figure>
+                                                                         
+                                <p>
+                                    Any performer knows that by <span class="bold">recording</span> themselves, they can note any issues with their act.
+                                </p>                               
+                                
+                                <p>
+                                    Record yourself when you play. It will help you in identifying any physical issues that the guitar may be presenting and it will give you the chance to review your own work. If you do well, you could even upload a video to <a class="bold" href="https://www.youtube.com/">YouTube</a>!
+                                </p>
+                            </div>                            
+                                                        
+                            <div id="performance" class="figure-example right">
+                                
+                                <h6 class="text-center">4. Perform at Open Mics</h6>
+                                <small class="italic text-center">(and do it solo).</small>
+                                
+                                <figure>
+                                    <img alt="Microphone on a microphone stand." title="Performing alone will help you hone in on your skills." src="media/microphone.jpg" />
+                                </figure>
+                                        
+                                <p>
+                                    <span class="bold">Open Mics</span> are a great way for you to get your name out as an artist as well as get comfortable with a live audience in a low-pressure environment.
+                                </p>
+                                
+                                <p>
+                                    Practice doesn't just stop in your sound-proofed room, studio, or garage. Publicly performing is an important part to taking your skills to the next level.
+                                </p>     
+                            </div>                        
+                            
+                            <div id="others" class="figure-example left">
+                                
+                                <h6 class="text-center">6. Play with others</h6>
+                                <small class="italic text-center">(and maybe start a band)?</small>
+                                
+                                <figure>
+                                    <img alt="Drumset." title="Any band worth its salt needs a bass guitarist, by the way." src="media/drumset.jpg" />
+                                </figure>
+                                        
+                                <p>
+                                    Playing alone is a great way to focus on your individual skill, but, by <span class="bold">playing with others</span> you can learn to accomodate for others. Once you can play alone, try jamming out with other musicians you know.
+                                </p>
+                                
+                                <p>
+                                    When playing with others, you can get used to working together to create better music and write better pieces. Having others to draw inspiration from, collaborate with, and jam with will make you a better artist, every time.
+                                </p>     
+                            </div>  
+                            
+                            <!-- Spaceholder -->
+                            <div class="space">     
+                                <p>&nbsp;</p>
+                            </div>                        
+                        </div>
+                    </div>                     
+                </div>
+            
+                <div id="next-info" class="main-set main-dark">                    
+                    <h2 class="main-title">That's it!</h2>
+
+                    <div class="sub-content c-8">
+                        <div class="figure-example index">
+                            <h3>Practice does indeed make perfect!</h3>                        
+                            <div class="sub-text">                        
+                                <p>
+                                    It takes 10,000 hours to master any skill! Stick to it and you could be the next <a class="bold" href="https://en.wikipedia.org/wiki/Jimi_Hendrix">Jimi Hendrix</a>!
+                                </p>
+                                <p class="text-center">
+                                    <a class="btn-redirect" href="about.html">Learn more about this project.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>  
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <!-- Pre-Footer Content -->
+            <section id="pre-footer" class="align-center text-center">
+                <small class="text-center italic">Find me on these platforms.</small>
+                <ul class="social">
+                    <li><a class="social-icon" href="https://github.com/rimij405"><img alt="Github"  src="media/octocat.png"/></a></li>
+                    <li><a class="social-icon" href="https://linkedin.com/in/effendiian"><img alt="LinkedIn" src="media/linkedin_big.png"/></a></li>
+                    <li><a class="social-icon" href="https://www.instagram.com/thelionsredmane/"><img alt="Instagram" src="media/instagram.png"/></a></li>
+                </ul>
+            </section>
+            
+            <!-- Divisor -->
+            <hr/>
+
+            <!-- Main Footer Content -->
+            <section id="footer-content" class="align-center text-center">
+                <p id="copyright" class="italic">&copy; 2016 - Ian Effendi (Project 1: Web Design and Implementation)</p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=people.rit.edu/iae2784/230/project1/play.html">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                </p>
+            </section>
+        </footer>
+        
+    </div>
+    
+    
+        <!-- JavaScript file references -->
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/sticky.js"></script>
+    
+</body>    
+</html>

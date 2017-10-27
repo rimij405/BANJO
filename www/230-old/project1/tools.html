@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metatag declarations -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Project 1 for Web Design and Implementation" />
+    
+    <!-- Title -->
+    <title>Learn that Thang!</title>    
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="media/icon.png" />
+        
+    <!-- CSS Stylesheet references -->
+        <!-- Print Only Stylesheet -->
+        <!-- Web Only Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/default-styles.css" />
+    
+</head>
+
+<!-- BODY Content -->
+<body>
+    
+    <!-- Website outer shell -->
+    <div id="website">
+        
+        <!-- Header shell -->
+        <header>
+
+            <!-- Navbar Trigger -->
+            <a href="javascript:void(0)" class="openbtn desktop-only" onclick="openPushNav()">Open Navigation</a>
+            
+            <!-- Website Title. -->
+            <div id="page-title" class="text-center bold">
+                <div id="brand">
+                    <img id="brand-img" src="media/icon.png" alt="Guitar Icon" title="Guitar Icon" class="desktop-only" />
+                </div>
+                <h1 class="bold">play that thang.</h1>
+                <small class="italic">Learning how to use the guitar!</small>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar alabastar text-center">
+                <span id="top" class="sr-only">To Navigation.</span> 
+                
+                <!-- Navbar (Desktop) Content -->                  
+                <div id="desktop-nav" class="sidenav desktop-only">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePushNav()">&times;</a>
+                    <ul class="navigation">
+                        <li class="nav-link"><a href="index.html">HOME</a></li>
+                        <li class="nav-link"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link current-link"><a href="#">TOOLS</a></li>
+                        <li class="nav-link"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div id="mobile-nav" class="mobile-only">
+                    <ul class="navigation btnshadow">
+                        <li class="nav-link main-dark"><a href="index.html">HOME</a></li>
+                        <li class="nav-link main-dark"><a href="anatomy.html">ANATOMY</a></li>
+                        <li class="nav-link main-dark current-link"><a href="#">TOOLS</a></li>
+                        <li class="nav-link main-dark"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link main-dark"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!-- Main Content -->
+        <section id="main">
+            
+            <!-- Aside Navigation Bar -->
+            <aside id="nav-aside" class="desktop-only">
+                <small class="text-center italics">Table of Contents</small>
+                <ul class="navigation btnshadow" onclick="closePushNav()">
+                    <li><a href="#tools-info">tools</a></li>
+                    <li class="indent"><a href="#pick">pick</a></li>
+                    <li class="indent"><a href="#metronome">metronome</a></li>
+                    <li class="indent"><a href="#tablature">tablature</a></li>
+                    <li class="indent"><a href="#sheet-music">sheet music</a></li>
+                    <li class="indent"><a href="#chord-progression">chords</a></li>
+                    <li class="indent"><a href="#quizlet">flash cards</a></li>
+                    <li><a href="#next-info">mastery</a></li>
+                </ul>                
+            </aside>
+            
+            <!-- Main Content -->
+            <div id="main-content" class="main-light">
+                
+                <div id="tools-info" class="main-set main-dark">                    
+                    <h2 class="main-title">The Guitar Toolset</h2>
+                                              
+                    <div class="sub-content c-8">
+                        <h3>Empowering you with the tools to succeed</h3>                        
+                        <div class="sub-text">                        
+                            <p>Any aspiring guitarist will add the following skills to their collection before they master the guitar.</p>
+                        </div>
+                    </div>
+                
+                    <div class="sub-content c-8">
+                        <h3 class="text-center">Let's look at some of those skills!</h3>                        
+                        <div class="sub-text">
+                                                        
+                            <div  id="pick" class="figure-example left">
+                                
+                                <h6 class="text-center">1. Learn how to hold a pick</h6>
+                                <small class="italic text-center">(and play safely).</small>
+                                
+                                <figure>
+                                    <img alt="A close-up of a guitar plectrum (pick)." title="A Pick (a.k.a. a plectrum)" src="media/plectrum.jpg" />
+                                </figure>
+                                                                         
+                                <p>
+                                    A <span class="bold">pick</span> or a <span class="bold">plectrum</span> is used to play the guitar. Playing with one's fingers can lead to calloused or cut fingertips! By using a pick whenever possible, players can prevent injury to themselves. Safety comes first!
+                                </p>                               
+                            </div>                            
+                                                        
+                            <div  id="metronome" class="figure-example right">
+                                
+                                <h6 class="text-center">2. Learn how to use a metronome</h6>
+                                <small class="italic text-center">(and stay on-beat).</small>
+                                
+                                <figure>
+                                    <img alt="Close-up of a metronome." title="A metronome is useful for keeping rhythm." src="media/metronome.jpg" />
+                                </figure>
+                                        
+                                <p>
+                                    A <span class="bold">metronome</span> is imperative for learning how to play in-time with any song. By being in time and staying with the rhythm of any song you wish to play, you'll find it easier to improvise your own melodies as your skills progress.
+                                </p>     
+                            </div>
+                            
+                            <div id="tablature" class="figure-example left">
+                                
+                                <h6 class="text-center">3. Learn how to read tablature</h6>
+                                <small class="italic text-center">(and play along).</small>
+                                
+                                <figure>
+                                    <a href="http://www.guitaretab.com/a/arctic-monkeys/358647.html"><img alt="Screenshot of a guitar tablature website." title="Websites like guitaretabs.com provide free tablatures and chord sheets." src="media/tablature.png" /></a>
+                                </figure>
+                                                                         
+                                <p>
+                                    <span class="bold">Guitar tablature</span> and <span class="bold">chord sheets</span> are a way of sharing song compositions for other guitarists to play without using classical sheet music notation. While some tabs provide fingerboard positions, other provide the placement of chords alongside any lyrics that the song might have. Most pop songs today have had tablatures created by other guitarists and shared online!
+                                </p>                               
+                                
+                                <p>
+                                    An example of a good guitar tablature can be found for the song, "<a class="italic" href="https://www.youtube.com/watch?v=bpOSxM0rNPM">Do I Wanna Know</a>," by the <a class="bold" href="https://en.wikipedia.org/wiki/Arctic_Monkeys">Arctic Monkeys</a> at <a class="bold" href="http://www.guitaretab.com/a/arctic-monkeys/358647.html">GuitareTab.com</a>.
+                                </p>
+                            </div>                            
+                                                        
+                            <div id="sheet-music" class="figure-example right">
+                                
+                                <h6 class="text-center">4. Learn sheet music notation</h6>
+                                <small class="italic text-center">(and make any kind of music).</small>
+                                
+                                <figure>
+                                    <img alt="Sheet-music book turned to the song 'Ask! Ask! Ask!' atop a grand piano." title="Sheet music notation allows any musician to play a song with any other instrument." src="media/sheet-music.jpg" />
+                                </figure>
+                                        
+                                <p>
+                                    <span class="bold">Sheet music notation</span> is a special kind of language used to transcribe and share musical pieces. When musicians traditionally composed music, they did so using sheet music notation. Before guitar tablature and chord sheets were prevalent, western compositions were only commonly accessbile through sheet music notation.
+                                </p>
+                                
+                                <p>
+                                    Today, sheet music allows artists to share pieces with other musicians - <span class="italic">even if they use different instruments.</span> If your favorite song was composed for the piano, using sheet music, you'd be able to play the same melody on your guitar, given your skill permits. 
+                                </p>     
+                                
+                                <p>
+                                    There exists many online software solutions that allow guitarists to create and share their own musical compositions!
+                                </p>
+                            </div>                        
+                            
+                            <div id="chord-progression" class="figure-example left">
+                                
+                                <h6 class="text-center">6. Practice the chord progression</h6>
+                                <small class="italic text-center">(and play any kind of music).</small>
+                                
+                                <figure>
+                                    <img alt="Screenshot of a person holding down a chord on the fretboard of their guitar." title="Chords are the building blocks of songs." src="media/chords.jpg" />
+                                </figure>
+                                        
+                                <p>
+                                    A <span class="bold">chord</span> is a grouping of notes - typically <span class="bold">three</span> or <span class="bold">more</span> - that, when played together, make the basis of a harmony. 
+                                </p>
+                                
+                                <p>
+                                    Interestingly enough, while chords are prevalent in West African, Oceanian, and Western music, chords are largely absent from the music in many other parts of the world! Feel free to experiment - chords are supposed to make it easier for you to compose music but you are not at all limited to Western interpretations of music.
+                                </p>     
+                            </div>  
+                            
+                            <div id="quizlet" class="figure-example right">
+                                
+                                <h6 class="text-center">7. Practice with flash cards!</h6>
+                                <small class="italic text-center">(or with similar study techniques).</small>
+                                
+                                <figure>
+                                    <a href="https://quizlet.com/111801584/guitar-flash-cards/"><img alt="Screenshot of a Quizlet home page." title="Quizlet provides free study tools and offers users the chance to create free study guides." src="media/quizlet.png" /></a>
+                                </figure>
+                                                                         
+                                <p>
+                                    What do <span class="bold">flash cards</span>, <a class="bold" href="https://quizlet.com">Quizlet</a>, and <a class="bold" href="http://ankisrs.net/">ANKI</a> have in common? They're all ways for you to study the guitar, sheet music, chord formation, and musical terms. Any skill is lost without practice and review! Using these sites, you can keep your skills at their peak.
+                                </p>
+                            </div>      
+                            
+                            <!-- Spaceholder -->
+                            <div class="space">     
+                                <p>&nbsp;</p>
+                            </div>                        
+                        </div>
+                    </div>                     
+                </div>
+            
+                <div id="next-info" class="main-set main-dark">                    
+                    <h2 class="main-title">You got the power!</h2>
+
+                    <div class="sub-content c-8">
+                        <div class="figure-example index">
+                            <h3>Practice makes perfect?</h3>                        
+                            <div class="sub-text">                        
+                                <p>
+                                    Now that you've got the skills, see if you can tackle the additional challenges that will make you <a class="bold" href="play.html">play</a> the guitar better than ever.
+                                </p>
+                                <p class="text-center">
+                                    <a class="btn-redirect" href="play.html">Mastering the guitar.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>  
+            </div>
+            
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <!-- Pre-Footer Content -->
+            <section id="pre-footer" class="align-center text-center">
+                <small class="text-center italic">Find me on these platforms.</small>
+                <ul class="social">
+                    <li><a class="social-icon" href="https://github.com/rimij405"><img alt="Github"  src="media/octocat.png"/></a></li>
+                    <li><a class="social-icon" href="https://linkedin.com/in/effendiian"><img alt="LinkedIn" src="media/linkedin_big.png"/></a></li>
+                    <li><a class="social-icon" href="https://www.instagram.com/thelionsredmane/"><img alt="Instagram" src="media/instagram.png"/></a></li>
+                </ul>
+            </section>
+            
+            <!-- Divisor -->
+            <hr/>
+
+            <!-- Main Footer Content -->
+            <section id="footer-content" class="align-center text-center">
+                <p id="copyright" class="italic">&copy; 2016 - Ian Effendi (Project 1: Web Design and Implementation)</p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=people.rit.edu/iae2784/230/project1/tools.html">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                </p>
+            </section>
+
+        </footer>
+        
+    </div>
+    
+    
+        <!-- JavaScript file references -->
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/sticky.js"></script>
+    
+</body>    
+</html>

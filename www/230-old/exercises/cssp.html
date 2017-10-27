@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tables - ICE for IGME 230.01</title>
+        <link rel="shortcut icon" type="image/png" href="../images/paw.png"/>
+        
+        <style>
+            table, th {
+                border: 2px solid black;
+            }
+            
+            table, th, td {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                border: 2px solid lightgray;
+            }
+            
+            th, td {
+                font-size: 1em;
+                padding: 4px;
+                color: black;
+                background-color: lightgray;
+            }
+            
+            th {
+                color: lightblue;
+                background-color: darkcyan;
+            }
+            
+            .category {
+                color: darkblue;
+                background-color: gray;
+            }
+            
+            header {
+                background: lightgray;
+                font-family: Arial;
+                font-size: 0.5em;
+                text-align: center;
+                border: 5px solid #777777;
+                padding: 5px 0px;
+            }
+            
+            h1 {
+                margin: 0px auto;
+            }
+            
+            .footer {
+                width: 100%;
+                margin: 0px auto;
+                vertical-align: middle;
+                text-align: center;
+            }
+            
+            .foot {                
+                position: absolute;
+                margin: 0px auto;
+                margin-top: 15px;
+                padding-top: 25px;
+                left: calc(100% / 4);
+                bottom: 0px;
+            }
+        
+            .image {
+                margin: 0px auto; 
+                max-width: 50%;
+            }
+            
+            img {
+                margin: 0px auto;
+                vertical-align: middle;
+                text-align: center;
+                width: 230px;
+            }
+            
+            section.col1 {
+                float: left;
+                width: 300px;
+                margin: 15px;
+            }
+            
+            section.col2 {
+                float: left;
+                clear: right;
+                width: 300px;
+                margin: 15px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <!-- Navigation -->
+        <nav>
+            <a href="../index.html">Return to the Index Page</a>.
+        </nav>
+        
+        <!-- Header -->
+        <header>
+            <h1>My Interests</h1>
+        </header>
+        
+        <!-- Assignment -->
+        <hr />
+        
+        <section class="col1">
+            <!-- Tables
+                Should have 3 columns: School, Hobbies, and Other.
+                Fill with own interests; leave bottom right empty.
+            -->
+            <table>
+                <!-- Table Title: "My Interests" -->
+                <tr>
+                    <th colspan="3">My Interests</th>
+                </tr>
+
+                <!-- Table Header -->
+                <tr>
+                    <td class="category">School</td>
+                    <td class="category">Hobbies</td>
+                    <td class="category">Other</td>
+                </tr>
+
+                <!-- Table Row: 1 -->
+                <tr>
+                    <td>Web Design</td>
+                    <td>Video Games</td>
+                    <td>JRPG Game Development</td>
+                </tr>
+
+                <!-- Table Row: 3 -->
+                <tr>
+                    <td>Web Programming</td>
+                    <td>Anime Mock-ups</td>
+                    <td>Graphic T-Shirt Design</td>
+                </tr>
+
+                <!-- Table Row: 3 -->
+                <tr>
+                    <td>Game Design</td>
+                    <td>Role Playing-Games</td>
+                    <td></td>
+                </tr>
+
+            </table>
+            
+            <p>
+                Here's a photograph of me:
+            </p>
+            
+            <div class="image">
+               <img src="../images/profile.jpg" alt="Ian Effendi" title="A portrait." />
+            </div>
+            
+        </section>
+        
+        <section class="col2">
+            <p>
+                I have many interests; such as video games, filmmaking, music composition, and editing.
+            </p>
+        
+            <p>
+                I don't really have much to say about myself. I'm working on a project to get the impossible game gimmick and feel into a truly useful learning environment to help teach students HTML and CSS code.
+            </p>
+            
+            <p>
+            
+            </p>
+        </section>
+        
+        <footer>
+            <p class="foot">This page was made by me. I own the copyright: &copy; Ian Effendi - 2016. </p>
+        </footer>
+    </body>
+</html>

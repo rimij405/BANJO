@@ -1,0 +1,70 @@
+.printonly {
+    display: block;
+}
+
+.screenonly {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+body, p {
+    font-family: monospace;
+    font-size: 10pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 0px 55px;
+    font-family: serif;
+    font-size: 24pt;
+    color: black;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: serif;
+    font-size: 1.7em;
+}
+
+h1.title {
+    text-align: center;
+    margin: 15px auto;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
+h5 {    
+    font-size: 14pt;
+}
+
+h6 {
+    font-size: 12pt;
+}
+
+footer > p {
+    text-align: center;
+    margin: 3px auto;
+    padding: 0px;
+    font-size: 9pt;
+}
+
+a, li, ul {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+}

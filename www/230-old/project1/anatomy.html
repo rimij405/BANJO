@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metatag declarations -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Anatomy of a guitar." />
+    
+    <!-- Title -->
+    <title>Anatomy of a Guitar</title>    
+    
+    <!-- Website Icon -->
+    <link rel="icon" href="media/icon.png" />
+        
+    <!-- CSS Stylesheet references -->
+        <!-- Print Only Stylesheet -->
+        <!-- Web Only Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/default-styles.css" />
+    
+</head>
+
+<!-- BODY Content -->
+<body>
+    
+    <!-- Website outer shell -->
+    <div id="website">
+        
+        <!-- Header shell -->
+        <header>
+
+            <!-- Navbar Trigger -->
+            <a href="javascript:void(0)" class="openbtn desktop-only" onclick="openPushNav()">Open Navigation</a>
+            
+            <!-- Website Title. -->
+            <div id="page-title" class="text-center bold">
+                <div id="brand">
+                    <img id="brand-img" src="media/icon.png" alt="Guitar Icon" title="Guitar Icon" class="desktop-only" />
+                </div>
+                <h1 class="bold">play that thang.</h1>
+                <small class="italic">Learning how to understand the guitar!</small>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar alabastar text-center">
+                <span id="top" class="sr-only">To Navigation.</span> 
+                
+                <!-- Navbar (Desktop) Content -->                  
+                <div id="desktop-nav" class="sidenav desktop-only">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePushNav()">&times;</a>
+                    <ul class="navigation">
+                        <li class="nav-link"><a href="index.html">HOME</a></li>
+                        <li class="nav-link current-link"><a href="#">ANATOMY</a></li>
+                        <li class="nav-link"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                
+                <div id="mobile-nav" class="mobile-only">
+                    <ul class="navigation btnshadow">
+                        <li class="nav-link main-dark"><a href="index.html">HOME</a></li>
+                        <li class="nav-link main-dark current-link"><a href="#">ANATOMY</a></li>
+                        <li class="nav-link main-dark"><a href="tools.html">TOOLS</a></li>
+                        <li class="nav-link main-dark"><a href="play.html">PLAY</a></li>
+                        <li class="nav-link main-dark"><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!-- Main Content -->
+        <section id="main">
+            
+            <!-- Aside Navigation Bar -->
+            <aside id="nav-aside" class="desktop-only">
+                <small class="text-center italics">Table of Contents</small>
+                <ul class="navigation btnshadow" onclick="closePushNav()">
+                    <li><a href="#guitar-info">guitar</a></li>
+                    <li class="indent"><a href="#acoustic-img">acoustics</a></li>
+                    <li class="indent"><a href="#electric-img">electrics</a></li>
+                    <li class="indent"><a href="#acoustic-electric-img">hybrids</a></li>
+                    <li><a href="#anatomy-info">anatomy</a></li>
+                    <li class="indent"><a href="#guitar_head">headstock</a></li>
+                    <li class="indent"><a href="#guitar_head">tuners</a></li>
+                    <li class="indent"><a href="#guitar_head">nut</a></li>
+                    <li class="indent"><a href="#guitar_head">neck</a></li>
+                    <li class="indent"><a href="#guitar_fretboard">fretboard</a></li>
+                    <li class="indent"><a href="#guitar_body">body</a></li>
+                    <li class="indent"><a href="#guitar_volume">pickups</a></li>
+                    <li class="indent"><a href="#guitar_volume">knobs</a></li>
+                    <li class="indent"><a href="#guitar_bridge">bridge</a></li>
+                    <li class="indent"><a href="#guitar_bridge">sound hole</a></li>
+                    <li class="indent"><a href="#guitar_pickups">strap pins</a></li>
+                    <li class="indent"><a href="#guitar_pickups">input jack</a></li>
+                    <li><a href="#next-info">learn more</a></li>
+                </ul>                
+            </aside>
+            
+            <!-- Main Content -->
+            <div id="main-content" class="main-light">
+                
+                <div id="guitar-info" class="main-set main-dark">                    
+                    <h2 class="main-title">The Guitar</h2>
+                                              
+                    <div class="sub-content c-8">
+                        <h3>What is a guitar?</h3>                        
+                        <div class="sub-text">                        
+                            <p>A guitar is a stringed musical instrument with a fretted fingerboard and either six or twelve strings. Guitars are played by plucking or strumming fingers or a plectrum (pick).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-content c-8">
+                        <h3>What kinds of guitars are there?</h3>                        
+                        <div class="sub-text">                        
+                            <p>
+                                There are three types of guitars: <a class="bold" href="#acoustic-img">acoustic</a>, <a class="bold" href="#electric-img">electric</a>, and <a class="bold" href="#acoustic-electric-img">acoustic-electric hybrids</a>.
+                            </p>
+                        </div>
+                    </div>  
+                    
+                    <div class="sub-content c-8 images">
+                        <div class="figure-block c-m6 left">
+                            <div id="acoustic-img" class="figure-content">
+                                <p>
+                                    <span class="bold">Acoustic</span> guitars have a hollow body, allowing the sound to naturally resonate and amplify.
+                                </p>
+                                <figure>
+                                    <img alt="Silhouette of an acoustic guitar." title="Acoustic guitars transmit sound without the use of an electronic pickup." src="media/guitar_acoustic_fill.png" />
+                                </figure>  
+                                <p>
+                                    Acoustic guitars transmit sound without the use of electronic pickups.
+                                </p>
+                            </div>           
+                        </div>
+                        
+                        <div class="figure-block c-m6 right">  
+                            <div id="electric-img" class="figure-content">
+                                <p>
+                                    <span class="bold">Electric</span> guitars are usually solid-body guitars with very little acoustic resistance.
+                                </p>                            
+                                <figure>
+                                    <img alt="Silhouette of an electric guitar." title="Electric guitars transmit sound with magnetic pickups beneath the strings." src="media/guitar_electric_fill.png" />
+                                </figure>  
+                                <p>
+                                    Electric guitars transmit sound with magnetic pickups beneath the strings.
+                                </p>
+                            </div>
+                        </div>                        
+                        
+                        <div class="figure-block c-m6 clear">    
+                            <div id="acoustic-electric-img" class="figure-content">
+                                <p>
+                                    <span class="bold">Acoustic-electric</span> guitars are semi-hollow with electrical pickups;
+                                    <br class="desktop-only"/>
+                                    they're useful for bridging the gap between genres.
+                                </p>
+                                <figure>
+                                    <img alt="Silhouette of an acoustic-electric hybrid guitar." title="Acoustic-electric hybrids can work as acoustic guitars or as electric guitars." src="media/guitar_acousticelectric_fill.png" />
+                                </figure>  
+                                <p>
+                                    Acoustic-electric hybrids can work as acoustic guitars or as electric guitars.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="anatomy-info" class="main-set main-dark">                    
+                    <h2 class="main-title">Guitar Anatomy</h2>
+                                              
+                    <div class="sub-content c-8">
+                        <h3>Look at the "bits."</h3>                        
+                        <div class="sub-text">                        
+                            <p>Modern guitars can vary in size and purpose but they all have the same general pieces.</p>
+                        </div>
+                    </div>
+                
+                    <div class="sub-content c-8">
+                        <h3 class="text-center">Let's look at some of those pieces!</h3>                        
+                        <div class="sub-text">
+
+                            <div id="guitar_head" class="figure-example left">
+                                <figure>
+                                    <img alt="Headstock, tuners, nut, and neck on an acoustic guitar." title="A Taylor Acoustic Guitar" src="media/guitar_head.png" />
+                                </figure>
+                                                                         
+                                <p>
+                                    <a class="bold" href="#guitar_head">Headstock</a> - The head or headstock is at the end of the neck where the strings stop. The tuners are here as well.
+                                </p>    
+
+                                <p>
+                                    <a class="bold" href="#guitar_head">Tuners</a> - Tuners, located on the headstock, are used to change the pitch of a string by loosening or tightening them. Too tight and the strings will snap!
+                                </p>
+                                
+                                <p>
+                                    <a class="bold" href="#guitar_head">Nut</a> - The nut is a piece found at the end of the neck that reinforces its attachment to the headstock and keeps the strings in place.
+                                </p> 
+
+                                <p>
+                                    <a class="bold" href="#guitar_head">Neck</a> - The bar sticking out of the body, along which the string runs. It connects the headstock to the body.
+                                </p>                            
+                            </div>                            
+                                                        
+                            <div id="guitar_fretboard" class="figure-example right">
+                                <figure>
+                                    <img alt="Frets, fretwires, and a fretboard on an acoustic guitar." title="A Taylor Acoustic Guitar" src="media/guitar_fretboard.png" />
+                                </figure>
+                                        
+                                <p>
+                                    <a class="bold" href="#guitar_fretboard">Frets</a> - The spaces between the strips of metal on the fretboard. When asked to place your fingers on a particular fret, however, it is referring to the fretwire on the bottom of a particular fret.
+                                </p>        
+                            
+                                <p>
+                                    <a class="bold" href="#guitar_fretboard">Fingerboard/Fretboard</a> - The fretboard, on the flatterside of the neck, is where you place your fingers to play.
+                                </p>
+
+                                <p>
+                                    <a class="bold" href="#guitar_fretboard">Fretwires</a> - The small strips of metal that are spread out along the fretboard.
+                                </p>
+                                                    
+                                <p>
+                                    <a class="bold" href="#guitar_fretboard">Position Markers</a> - The dots on the fretboard are visual indicators for the 3rd, 5th, 7th, and 9th frets. The 12th fret is usually marked in a different way, indicating the start of the pattern's repetition.
+                                </p>
+                            </div>
+                            
+                            <div id="guitar_body" class="figure-example left">
+                                <figure>
+                                    <img alt="Scratch plate and body of an acoustic guitar." title="A Taylor Acoustic Guitar" src="media/guitar_body.png" />
+                                </figure>
+                                
+                                <p>
+                                    <a class="bold" href="#guitar_body">Body</a> - The body is the main part of the guitar. Here you'll find the bridge, any volume/tone controls, and other important components to the instrument.
+                                </p>                                
+                            
+                                <p>
+                                    <a class="bold" href="#guitar_body">Scratch Plate</a> - The scratch plate protects the body from scratching and holds any electronics in place.
+                                </p>   
+                            </div>
+                                
+                             <div id="guitar_volume" class="figure-example right">
+                                <figure>
+                                    <img alt="Pickups and volume controls on an electric guitar." title="An electric guitar" src="media/guitar_volume.png" />
+                                </figure>
+                                
+                                <p>
+                                    <a class="bold" href="#guitar_volume">Pick-up(s)</a> - Electric guitars have grouping of magnets (called "pickups") that lie beneath the strings. Pickups use their magnets to measure the changes in the magnetic field made by the moving strings. (Pickups come in two styles: single coil and humbucker).
+                                </p>
+                                 
+                                <p>
+                                    <a class="bold" href="#guitar_volume">Volume Knob(s)</a> - On an electric guitar, this controls the volume of the electric signal.
+                                </p>                     
+
+                                <p>
+                                    <a class="bold" href="#guitar_volume">Tone Knob(s)</a> - The tone knobs control the amount of bass or treble the electric guitar makes.
+                                </p> 
+                            </div>                            
+                            
+                            <div id="guitar_bridge" class="figure-example left">                                  
+                                <figure>
+                                    <img alt="Sound hole, rose, and bridge of an acoustic guitar." title="A Taylor Acoustic Guitar" src="media/guitar_bridge.png" />
+                                </figure>
+
+                                <p>
+                                    <a class="bold" href="#guitar_bridge">Bridge</a> - The anchor fastening the strings to the body. When changing strings, this is where the, "ball," sits.
+                                </p>
+                                
+                                <p>
+                                    <a class="bold" href="#guitar_bridge">Rose</a> - The decoration around a sound hole is called a rose!
+                                </p>
+                                                                                
+                                <p>
+                                    <a class="bold" href="#guitar_bridge">Sound Hole</a> - Acoustic and acoustic-electric guitars use this hole to allow the sound to exit the guitar after it's bounced around inside the body. Acoustic guitars tend to be larger than electric guitars to allow this buildup and transfer of sound.
+                                </p>                                
+                            </div>
+                                                        
+                            <div id="guitar_pickups" class="figure-example right">                                  
+                                <figure>
+                                    <img alt="Strap pin (that holds a guitar strap) on an electric guitar." title="An electric guitar" src="media/guitar_pickups.png" />
+                                </figure>
+
+                                <p>
+                                    <a class="bold" href="#guitar_pickups">Strap Pin</a> - Some guitars will have a strap pin - this is where the guitar straps fit on!
+                                </p>      
+
+                                <p>
+                                    <a class="bold" href="#guitar_pickups">Pick-up Selector</a> - Most electric guitars have more than one pickup. This selector allows the player to choose between one or more than one selector at a time.
+                                </p>
+
+                                <p>
+                                    <a class="bold" href="#guitar_pickups">Input Jack</a> - It's not pictured here, but, this is where an electric guitar is plugged into an amplifier. Loose cables can be an issue as they generate a lot of noise!
+                                </p>                       
+                            </div>                                     
+
+                            <!-- Spaceholder -->
+                            <div class="space">     
+                                <p>&nbsp;</p>
+                            </div>                        
+                        </div>
+                    </div>                     
+                </div>
+            
+                <div id="next-info" class="main-set main-dark">                    
+                    <h2 class="main-title">Understanding the pieces!</h2>
+
+                    <div class="sub-content c-8">
+                        <div class="figure-example index">
+                            <h3>Ready to learn?</h3>                        
+                            <div class="sub-text">                        
+                                <p>
+                                    After learning the parts of the guitar, you should take a look at some of the <a class="bold" href="tools.html">Tools</a> involved with the guitar.
+                                </p>
+                                <p class="text-center">
+                                    <a class="btn-redirect" href="tools.html">Understanding guitar tools.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>  
+            </div>
+            
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <!-- Pre-Footer Content -->
+            <section id="pre-footer" class="align-center text-center">
+                <small class="text-center italic">Find me on these platforms.</small>
+                <ul class="social">
+                    <li><a class="social-icon" href="https://github.com/rimij405"><img alt="Github"  src="media/octocat.png"/></a></li>
+                    <li><a class="social-icon" href="https://linkedin.com/in/effendiian"><img alt="LinkedIn" src="media/linkedin_big.png"/></a></li>
+                    <li><a class="social-icon" href="https://www.instagram.com/thelionsredmane/"><img alt="Instagram" src="media/instagram.png"/></a></li>
+                </ul>
+            </section>
+            
+            <!-- Divisor -->
+            <hr/>
+
+            <!-- Main Footer Content -->
+            <section id="footer-content" class="align-center text-center">
+                <p id="copyright" class="italic">&copy; 2016 - Ian Effendi (Project 1: Web Design and Implementation)</p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=people.rit.edu/iae2784/230/project1/anatomy.html">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>
+                </p>
+            </section>
+
+        </footer>
+        
+    </div>
+    
+    
+        <!-- JavaScript file references -->
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/sticky.js"></script>
+        <!-- <script thpe="text/javascript" src="js/marker.js"></script>
+    
+        <script type="text/javascript" >
+        
+        window.addEventListener("scroll", function(event) {
+           markerScroll("guitar-info-link", "current")
+        });
+            
+        window.addEventListener("scroll", function(event) {
+           markerScroll("anatomy-info-link", "current")
+        }); 
+            
+        window.addEventListener("scroll", function(event) {
+           markerScroll("next-info-link", "current")
+        });
+            
+        </script> -->
+    
+</body>    
+</html>

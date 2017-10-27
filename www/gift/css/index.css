@@ -1,0 +1,286 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Yellowtail');
+
+/* Reset */
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+html, body, main, section, div,
+h1, h2, h3, h4, h5, h6, 
+p, a, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    color: #FDEE71;
+    background-color: black;    
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 7em;
+    text-align: center;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+h2 { font-size: 6em; }
+h3 { font-size: 5em; }
+h4 { font-size: 4em; }
+h5 { font-size: 3em; }
+h6 { font-size: 2em; }
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.7em;
+    line-height: 1.5;
+}
+
+p.caption {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* MAIN */
+
+main {
+    margin: 0px auto;
+    padding: 0px;
+    width: 80%;
+}
+
+section {
+    display: block;
+    width: 100%;
+}
+
+section h1, section p.caption {
+    text-align: center;
+}
+
+#topic {
+    margin-top: 5%;
+}
+
+#topic, #signatures {
+    margin-bottom: 5%;
+    padding-bottom: 15px;
+    
+    border: 1px solid #fdee71;
+    border-radius: 5px;
+}
+
+.highlight {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    
+    margin-bottom: 5%;
+}
+
+.highlight-caption {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 60%;
+    z-index: 0;
+    opacity: 0;
+    font-size: 1.1em;
+    
+    background-color: rgba(0, 0, 0, 0);
+    
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    margin-top: -10%;
+    margin-bottom: 1em;
+    margin-left: 15%;
+    
+    border-radius: 5px;
+    
+    transition: all 1s ease;
+}
+
+.highlight:hover .highlight-caption {
+    opacity: 1;    
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.3em;
+    
+    margin-top: 25%;
+    margin-bottom: 1em;
+    margin-left: 15%;
+    
+    transition: all 700ms ease-in-out;
+}
+
+.content {
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 1.15;
+    
+    opacity: 0;    
+    transition: all 1s ease-in-out;
+}
+
+.signature {
+    font-size: 1.3em;
+    text-align: right;
+    padding-left: 5%;
+    
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.highlight:hover .content,
+.highlight:hover .signature {
+    opacity: 1;
+    
+    transition: all 700ms ease-in-out;
+}
+
+.highlight-caption div {
+    margin: 0px auto;
+    width: auto;
+}
+
+.highlight img {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    
+    border-radius: 5px 5px 5px 5px;
+}
+
+.lean-right {
+    transform: rotate(1deg);
+    transition: all 1s ease-in-out;
+}
+
+.lean-left {
+    transform: rotate(-1deg);
+    transition: all 1s ease-in-out;
+}
+
+.lean-right:hover {
+    transform: rotate(2deg);
+    transition: all 700ms ease-in-out;    
+}
+
+.lean-left:hover {    
+    transform: rotate(-2deg);
+    transition: all 700ms ease-in-out;    
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0px auto;
+    padding: 45px;
+    width: 80%;
+    
+    margin-bottom: 5%;
+}
+
+footer p, footer h6 {
+    text-align: center;
+    line-height: 2;
+    padding: 0.5%;
+    font-size: 1.2em;
+    font-style: italic;
+    
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    
+    /* FONT SIZING */
+    h1 { font-size: 3em; }
+    h2 { font-size: 2.7em; }
+    h3 { font-size: 2.5em; }
+    h4 { font-size: 2.3em; }
+    h5 { font-size: 2.1em; }
+    h6 { font-size: 1.9em; }
+    p { font-size: 1.7em; }
+    p.caption { font-size: 1em; }
+    
+    #topic {
+        margin-top: 25%;
+    }
+    
+    #topic, #signatures {
+        margin-bottom: 10%;
+        padding-bottom: 5px;
+    }
+    
+    .highlight {
+        margin-bottom: 30%;
+        transition: all 2s ease-in-out;
+    }
+    
+    .highlight img {        
+        transition: all 2s ease-in-out;
+    }
+    
+    .highlight-caption, 
+    .content, .signature {
+        opacity: 1;
+        font-size: 1em;
+    }
+    
+    .highlight-caption {
+        width: 75%;
+        padding: 2%;
+        font-size: 1.1em;
+        
+        background-color: rgba(0, 0, 0, 0.8);
+
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+            
+        transition: all 1s ease-in-out;
+    }    
+    
+    .highlight:hover .highlight-caption {             
+        background-color: rgba(0, 0, 0, 0.89);
+        border: 3px solid #fdee71;
+        font-size: 1.18em;
+        
+        margin-top: 8%;
+        margin-left: 8%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        
+        transition: all 700ms ease-in-out;
+    }
+    
+    .highlight-caption div {
+        margin: 0px auto;
+        padding: 2% 0%;
+        width: 80%;
+    }
+    
+    footer p, footer h6 {
+        font-size: 0.7em;
+    }
+}

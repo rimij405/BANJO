@@ -1,0 +1,21 @@
+/* FONT */
+@import 'https://fonts.googleapis.com/css?family=Cutive|Oswald|Roboto';
+
+/* SPACING */
+/* MARGINS */
+html, body {
+  padding: 20px;
+}
+
+h1  {
+  font-family: 'Cutive', serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+

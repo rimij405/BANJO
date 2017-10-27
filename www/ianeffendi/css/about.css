@@ -1,0 +1,50 @@
+.list-group:hover > a {
+	cursor: default;
+}
+
+.profile-img {
+	width: 100%;
+    border-bottom: 10px solid #7f9da5;
+    border-top: 10px solid #333333;
+    border-left: 10px solid #ddd;
+    border-right: 10px solid #ddd;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+#profile,
+#profile > div,
+#profile > div > div.jumbotron {
+    max-width: 100%;
+    padding: 0 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	z-index: 2;
+}
+
+@media (min-width: 767px) {	
+	.profile-img {
+		width: 80%;
+		max-width: 550px;
+		margin: 0 auto;
+		border-left: 10px solid #ddd;
+		border-right: 10px solid #ddd;
+		border-bottom: 10px solid #7f9da5;
+		border-top: 10px solid #333333;
+	}
+    	
+    #profile,
+    #profile > div,
+    #profile > div > div.jumbotron {
+        max-width: 100%;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        z-index: 2;
+    }
+    
+	#about-section {
+		margin-top: 0;
+	}
+}
