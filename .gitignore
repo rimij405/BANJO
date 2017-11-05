@@ -30,6 +30,7 @@ Thumbs.db
 *.sublime-workspace
 *.komodoproject
 *.komodo*
+*.vs*
 
 # ignore server files.
 *.htaccess
