@@ -1,3 +1,6 @@
 [submodule "www/230"]
 	path = www/230
 	url = https://github.com/rimij405/IGME230.git
+[submodule "www/portfolio"]
+	path = www/portfolio
+	url = https://github.com/rimij405/portfolio.git
