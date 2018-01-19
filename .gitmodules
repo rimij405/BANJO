@@ -4,3 +4,6 @@
 [submodule "www/portfolio"]
 	path = www/portfolio
 	url = https://github.com/rimij405/portfolio.git
+[submodule "www/330"]
+	path = www/330
+	url = https://github.com/rimij405/igme330.git
